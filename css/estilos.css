@@ -115,7 +115,7 @@ h1{font-size: 1.8em;}
 #menu > ul > li >a:hover {background-color: #fff; color: #333;}
 
 #home{background-image: url(../images/home.jpg); height: 100vh; background-size: cover; background-position: center; display: flex; justify-content: flex-start; align-items: center;}
-
+#home h2 > span {display: block; font-size: 0.75em;}
 #portifolio{min-height: calc(100vh - 90px);}
 #portifolio div > a {display: block; margin-bottom: 15px;}
 
