@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebJedi</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body>
+    <header class="p-1">
+        <h1 class="">WEBJEDI</h1>
+        <button id="btn_menu" onclick="clickMenu()"><span class="material-symbols-outlined">menu</span></button>
+        <nav id="menu" onclick="clickMenu()" style="display: none;">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home">
+        <div class="container p-1">
+            <div class="col-6 col-sm-9 col-md-6">
+                <h2 class="pb-1"><span>EU SOU</span>DESENVOLVEDOR</h2>
+                <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae, placeat ipsum culpa sint, dolorem delectus quae quasi reprehenderit tempore, quibusdam enim quo. Corporis temporibus nam nulla exercitationem praesentium aperiam.</p>
+                <a href="#sobre" class="btn-md">MAIS SOBRE MIM</a>
+            </div>
+        </div>
+    </div>
+    <div id="portifolio" class="container p-1">
+        <h2 class="mt-2 align-center">Portifólio</h2>
+        <p class="align-center">Conheça um pouco dos meus trabalhos.</p>
+        <div class="row mt-2 mb-2">
+            <a href="#" class="col-4 col-sm-12 col-md-4"><img src="images/01.jpg" alt="Projeto 1" class="img-thumb"></a>
+            <a href="#" class="col-4 col-sm-6 col-md-4"><img src="images/02.jpg" alt="Projeto 2" class="img-thumb"></a>
+            <a href="#" class="col-4 col-sm-6 col-md-4"><img src="images/03.jpg" alt="Projeto 3" class="img-thumb"></a>
+        </div>
+    </div>
+    <div id="sobre" class="container p-1">
+        <div class="col-md-6 pb-2">
+            <h2 class="mt-2 align-center">Um pouco sobre mim</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic unde eum et repellendus, laboriosam cupiditate eius rerum recusandae adipisci aperiam.</p>
+        </div>
+        <div id="sobre_foto" class="col-md-6"><img src="images/adulto-bigode-borrao-167669.jpg"></div>
+    </div>
+    <footer id="contatos" class="p-3 align-center">
+        <p>Site desenvolvido por <a href="mailto:seuemail.com.br">bruno_s_marques@hotmail.com</a><br>Se preferir me chama no <a href="https://wa.link/gcmhlz" target="_blank">WhatsApp</a>.</p>
+    </footer>
+    <script src="js/efeitos.js"></script>
+</body>
+</html>
