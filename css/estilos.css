@@ -106,18 +106,20 @@ img {max-width: 100%;}
 /* FIM DAS PADRONIZAÇÕES */
 
 
-body > header{background-color: #e3e3e3; display: flex; width: 100%; justify-content: space-between; align-items: center; }
+body > header{position: fixed; width: 100%; background-color: #e3e3e3; display: flex; width: 100%; justify-content: space-between; align-items: center; }
 h1{font-size: 1.8em;}
-#menu {position: fixed; top: 0; right: 0; height: 100vh; width: 40vw; background-color: #333;}
+#menu {position: fixed; top: 0; right: 0; height: 100vh; width: 100vw; background-color: transparent;}
 #btn_menu {background-color: transparent; border: 0; cursor: pointer;}
-#menu > ul {list-style: none; padding: 20px;}
+#menu > ul {list-style: none; padding: 20px; width: 50%; height: 100%; background: #333; position: absolute; right: 0;}
 #menu > ul > li >a {color: #fff; padding: 10px; display: block;}
 #menu > ul > li >a:hover {background-color: #fff; color: #333;}
 
 #home{background-image: url(../images/home.jpg); height: 100vh; background-size: cover; background-position: center; display: flex; justify-content: flex-start; align-items: center;}
 #home h2 > span {display: block; font-size: 0.75em;}
-#portifolio{min-height: calc(100vh - 90px);}
+#portifolio{min-height: 100vh; padding-top: 90px;}
 #portifolio div > a {display: block; margin-bottom: 15px;}
+
+#sobre{padding-top: 90px;}
 
 footer#contatos{ background-color: #333; color: #fff;}
 footer#contatos a {color: #fff; text-decoration: underline;}
@@ -147,7 +149,7 @@ footer#contatos a {color: #fff; text-decoration: underline;}
     #btn_menu{display: none;}
     #menu{display: block !important;}
     #menu {position: initial; height: auto; width: auto; background-color:transparent;}
-    #menu > ul {list-style: none; padding: auto;}
+    #menu > ul {position:initial; padding: 0; width: fit-content; list-style: none; padding: auto; background-color: transparent;}
     #menu > ul > li {display: inline-block;}
     #menu > ul > li > a {color: #333; padding: 10px; display: block;}
     #menu > ul > li >a:hover {background-color: #fff; color: #333;}
