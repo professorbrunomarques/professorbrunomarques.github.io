@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+    <style>
+        body{display: flex; align-items: center;}
+        img{width: 400px; display: none;}
+        .ativa{display: block;}
+    </style>
+</head>
+<body>
+    <button id="voltar"><<</button>
+    <div id="fotos">
+        <img src="img/bosque.jpg">
+        <img src="img/bosque2.jpg" >
+        <img src="img/bosque3.jpg" >
+        <img src="img/inverno.jpeg">
+    </div>
+    <button id="passar">>></button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            var fotos = $("#fotos > img").length -1;
+            var pos = 0;
+            $("#fotos > img:eq("+pos+")").addClass("ativa");
+
+            $("#voltar").click(function(){
+                if(pos > 0){
+                    pos -= 1;
+                    $("img.ativa").removeClass("ativa");
+                    $("#fotos > img:eq("+pos+")").addClass("ativa");
+                }
+            });
+            $("#passar").click(function(){
+                if(pos < fotos){
+                    pos += 1;
+                    $("img.ativa").removeClass("ativa");
+                    $("#fotos > img:eq("+pos+")").addClass("ativa");
+                } 
+            });
+        });
+    </script>
+</body>
+</html>

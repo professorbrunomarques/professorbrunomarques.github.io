@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Imagem</title>
+</head>
+<body>
+    <img src="" id="foto" width="450">
+    <button id="btnTrocar">Trocar</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#foto").attr("src","img/bosque.jpg");
+            $("#btnTrocar").click(function(){
+                if ($("#foto").attr("src") == "img/bosque.jpg") {
+                    $("#foto").attr("src","img/bosque2.jpg");
+                }else{
+                    $("#foto").attr("src","img/bosque.jpg");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
