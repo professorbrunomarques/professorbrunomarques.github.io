@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Elementos</title>
+    <style>
+        body{padding-top: 20px;}
+        p.destaque{border: 1px solid red;}
+    </style>
+</head>
+<body>
+    <div id="site">
+        <button id="criar">Criar parágrafo</button>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#criar").on("click",function(){
+                var p = $("<p>Novo Parágrafo</p>");
+                p.addClass("destaque");
+                $("#site").append(p);
+
+                // var btn = $("<button>",{
+                //     id:'alerta',
+                //     text:'clique aqui',
+                //     click:function(){
+                //         alert("O botão criado foi clicado!");
+                //     }
+                // });
+                $("p").dblclick(function(){
+                    $(this).remove();
+                });
+
+            });
+        });
+    </script>
+</body>
+</html>
