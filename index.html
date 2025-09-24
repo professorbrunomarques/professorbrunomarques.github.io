@@ -1,66 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebJedi</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://professorbrunomarques.github.io/" />
-    <meta property="og:title" content="WebJedi" />
-    <meta property="og:description" content="Portifólio feito para estudos de programação Front-End" />
-    <meta property="og:image" content="https://professorbrunomarques.github.io/images/home.jpg" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://professorbrunomarques.github.io/" />
-    <meta property="twitter:title" content="WebJedi" />
-    <meta property="twitter:description" content="Portifólio feito para estudos de programação Front-End" />
-    <meta property="twitter:image" content="https://professorbrunomarques.github.io/images/home.jpg" />
+    <title>Café com Leite .com</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="p-1">
-        <h1 class="">WEBJEDI2</h1>
-        <button id="btn_menu" onclick="clickMenu()"><span class="material-symbols-outlined">menu</span></button>
-        <nav id="menu" onclick="clickMenu()" style="display: none;">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portifolio">Portifólio</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+    <header>
+        <div>
+            <div id="logo">
+                <h1 class="font-zero">Café com Leite .com</h1>
+                <img src="images/logo.jpg" alt="Logo do Café com Leite .com">
+            </div>
+            <a href="#" id="banner">
+                <img src="images/iFood_banner_promo.jpg" alt="Propaganda do Ifood">
+            </a>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
+                <li><a href="#">LINK</a></li>
             </ul>
         </nav>
     </header>
-    <div id="home">
-        <div class="container p-1">
-            <div class="col-6 col-sm-9 col-md-6">
-                <h2 class="pb-1"><span>EU SOU</span>DESENVOLVEDOR</h2>
-                <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae, placeat ipsum culpa sint, dolorem delectus quae quasi reprehenderit tempore, quibusdam enim quo. Corporis temporibus nam nulla exercitationem praesentium aperiam.</p>
-                <a href="#sobre" class="btn-md">MAIS SOBRE MIM</a>
-            </div>
+    <main>
+        <div id="content">
+            <article id="destaque">
+                <h2>Cachorra que perdeu pata no Afeganistão ganha medalha por bravura</h2>
+                <figure>
+                    <img src="images/destaque2.jpg" alt="Cachorra">
+                    <figcaption>A CACHORRA LUCCA POSA PARA FOTO APÓS RECEBER A MEDALHA PDSA DICKIN POR BRAVURA ANIMAL, EM LONDRES, NO REINO UNIDO</figcaption>
+                </figure>
+                <p>Uma cadela que perdeu uma pata ao pisar em uma mina terrestre no Afeganistão recebeu uma medalha por bravura nesta terça-feira (13) em uma cerimônia na Casa Branca, nos Estados Unidos. A cachorra, chamada de Lucca, é um pastor alemão que serviu com o Corpo de Fuzileiros Navais dos EUA por seis anos, incluindo 398 missões no Afeganistão.</p>
+            </article>
+            <section id="noticias">
+                <h2>Últimas Notícias</h2>
+                <div>
+                <article class="noticia frist">
+                    <img src="images/destaque.jpg" alt="Idosa">
+                    <h3><a href="#">Aposentada se forma em serviço social aos 68: 'Quero ajudar as pessoas'</a></h3>
+                </article>
+                <article class="noticia">
+                    <img src="images/destaque2.jpg" alt="Idosa">
+                    <h3><a href="#">Cachorra que perdeu pata no Afeganistão ganha medalha por bravura</a></h3>
+                </article>
+                <article class="noticia">
+                    <img src="images/destaque3.jpg" alt="Idosa">
+                    <h3><a href="#">Crianças refugiados e migrantes dormem no porto de Quíos, na Grécia</a></h3>
+                </article>
+                </div>
+            </section>    
         </div>
-    </div>
-    <div id="portifolio" class="container p-1">
-        <h2 class="mt-2 align-center">Portifólio</h2>
-        <p class="align-center">Conheça um pouco dos meus trabalhos.</p>
-        <div class="row mt-2 mb-2">
-            <a href="#" class="col-4 col-sm-12 col-md-4"><img src="images/01.jpg" alt="Projeto 1" class="img-thumb"></a>
-            <a href="#" class="col-4 col-sm-6 col-md-4"><img src="images/02.jpg" alt="Projeto 2" class="img-thumb"></a>
-            <a href="#" class="col-4 col-sm-6 col-md-4"><img src="images/03.jpg" alt="Projeto 3" class="img-thumb"></a>
-        </div>
-    </div>
-    <div id="sobre" class="container p-1">
-        <div class="col-md-6 pb-2">
-            <h2 class="mt-2 align-center">Um pouco sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non hic unde eum et repellendus, laboriosam cupiditate eius rerum recusandae adipisci aperiam.</p>
-        </div>
-        <div id="sobre_foto" class="col-md-6"><img src="images/adulto-bigode-borrao-167669.jpg"></div>
-    </div>
-    <footer id="contatos" class="p-3 align-center">
-        <p>Site desenvolvido por <a href="mailto:seuemail.com.br">bruno_s_marques@hotmail.com</a><br>Se preferir me chama no <a href="https://wa.link/gcmhlz" target="_blank">WhatsApp</a>.</p>
-    </footer>
-    <script src="js/efeitos.js"></script>
+        <aside>
+            <section id="mais_lidas">
+                <h2>Notícias mais lidas</h2>
+                <div>
+                <article class="clearfix">
+                    <img src="images/destaque.jpg" alt="Idosa">
+                    <h3><a href="#">Aposentada se forma em serviço social aos 68: 'Quero ajudar as pessoas'</a></h3>
+                </article>
+                <article class="clearfix">
+                    <img src="images/destaque2.jpg" alt="Idosa">
+                    <h3><a href="#">Cachorra que perdeu pata no Afeganistão ganha medalha por bravura</a></h3>
+                </article>
+                <article class="clearfix">
+                    <img src="images/destaque3.jpg" alt="Idosa">
+                    <h3><a href="#">Crianças refugiados e migrantes dormem no porto de Quíos, na Grécia</a></h3>
+                </article>
+                </div>
+            </section>
+            <section id="publicidade">
+                <h2>Publicidade</h2>
+                <a href="#"><img src="images/masterchef.gif" alt="Propaganda"></a>
+            </section>
+            <section id="redes_sociais">
+                <h2>Redes Sociais</h2>
+                <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook" width="60"></a>
+                <a href="#"><img src="images/x.svg" alt="Twitter" width="60"></a>
+                <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram" width="60"></a>
+            </section>
+        </aside>
+    </main>
+    <footer>Todos os direitos reservados</footer>
 </body>
 </html>

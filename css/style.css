@@ -1,0 +1,239 @@
+/**
+*
+* background: #431F1F;
+* color: #F60;
+*
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Candara", verdana, sans-serif;
+}
+
+
+/* CLASSES AUXILIARES */
+.font-zero{
+    font-size: 0;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* INICIO DO HEADER */
+header{
+    background: #431F1F;
+}
+header img{
+    max-height: 215px;
+}
+header #banner, header #logo{
+    margin: 2%;
+}
+header #logo img{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+header nav{
+    background: #F60;
+}
+header #menu{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    padding: 1% 2%;
+}
+header #menu a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;}
+header #menu a:hover{
+    color: #431F1F;
+    text-decoration: underline;}
+
+/* FIM DO HEADER */
+
+/* INICIO DO MAIN */
+
+
+#content{
+    padding: 20px;
+}
+#destaque, #noticias{
+    margin-bottom: 40px;
+}   
+#destaque h2{
+    margin-bottom: 20px;
+    color: #f60;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-transform: uppercase;}
+#destaque figure {
+    margin: 0 0 20px 0;
+}
+#destaque figcaption{
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    text-align: left;
+    font-style: italic;
+}    
+#destaque img{
+    width: 100%;
+}
+#destaque p{
+    text-align: justify;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+#noticias h2{
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    text-transform: uppercase;}   
+#noticias > div{
+    
+}
+.noticia{
+    margin-bottom: 20px;
+}
+.noticia img{ margin-bottom: 20px;}
+.noticia a{text-decoration: none; color:#F60; font-weight: 300; font-size: 1.2em;}
+.noticia a:hover{text-decoration: underline;}
+
+aside{
+    
+    padding: 20px;
+}
+
+aside h2{
+    margin-bottom: 20px;
+    background-color: #431F1F;
+    color: #FFF;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px;
+    text-transform: uppercase;}
+
+#mais_lidas article{
+
+    margin-bottom: 20px;
+}
+#mais_lidas article img{
+    border: 1px solid #431F1F;
+    background-color: #FFF;
+    padding: 5px;
+    margin-right: 15px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+#mais_lidas article a{
+    text-decoration: none;
+    color: #f60;
+    font-weight: 400;
+}
+#mais_lidas article a:hover{
+    text-decoration: underline;
+}
+#publicidade{
+    margin-bottom: 20px;
+}
+#publicidade img{
+   margin: 0 auto;
+}
+#redes_sociais img{
+    display: inline-block;
+}
+#redes_sociais a {
+    color: #F60;
+}   
+/* FIM DO MAIN */
+footer{
+    background: #431F1F;
+    color: #FFF;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) { 
+
+    header > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #noticias > div{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    #mais_lidas > div{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px
+    }
+    #mais_lidas article h3{padding-top: 15px;}
+
+}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {  
+
+}
+
+ /* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+   h2 {font-size: 2.0em !important;}
+   h3 {font-size: 1.5em !important;}  
+   main{
+       display: flex;
+       justify-content: space-between;
+       gap: 20px;
+   }
+   #content{
+       width: 70%;
+   }
+   aside{
+         width: 30%;
+   }
+   #mais_lidas > div{
+        display: block;
+    }
+
+}
+
+ /* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+    
+}
+
+ /* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    
+}
+
+ /* XX-Large devices (larger desktops) */
+ /* No media query since the xxl breakpoint has no upper bound on its width */
